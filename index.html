@@ -4,28 +4,30 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Innovation-Trends</title>
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <style>
     :root {
-      --bg: #cfd8e8;          /* Light blue background */
-      --card: #ffffff;
-      --muted: #333f55;
-      --text: #1b2436;        /* Dark navy text */
+      --bg-1: #eef3fb;
+      --bg-2: #dbe6f6;
+      --surface: #ffffffcc;
+      --surface-border: #dde6f5;
+      --card: #fff;
+      --text: #1f2a44;
+      --muted: #475a7a;
       --brand: #4f7cff;
       --brand-2: #7cc5ff;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html, body {
       margin: 0;
       padding: 0;
       font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
       color: var(--text);
-      background: var(--bg);
+      background:
+        radial-gradient(1200px 520px at 18% 120px, var(--bg-1) 0%, var(--bg-2) 38%, var(--bg-1) 68%),
+        linear-gradient(#eef3fb, #eef3fb);
     }
 
     a {
@@ -47,7 +49,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 28px;
+      margin-bottom: 20px;
     }
 
     .logo-title {
@@ -77,10 +79,20 @@
       font-weight: 600;
     }
 
+    .surface {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 24px;
+      box-shadow: 0 12px 28px rgba(31, 42, 68, 0.08);
+      padding: 28px 22px;
+      backdrop-filter: saturate(120%) blur(2px);
+      margin-top: 12px;
+    }
+
     .hero {
       display: grid;
       gap: 16px;
-      padding: 40px 0;
+      padding: 24px 0;
     }
 
     .hero h1 {
@@ -104,11 +116,11 @@
     }
 
     .card {
-      background: #f7f9fc;
-      border: 1px solid rgba(0,0,0,0.1);
+      background: var(--card);
+      border: 1px solid #e3eaf6;
       border-radius: 16px;
       padding: 18px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 10px rgba(31, 42, 68, 0.05);
     }
 
     .card h3 {
@@ -117,7 +129,7 @@
     }
 
     footer {
-      margin: 48px 0 16px;
+      margin: 32px 0 12px;
       color: #4a5060;
       font-size: 14px;
       text-align: center;
@@ -146,46 +158,48 @@
       <a class="cta" href="https://safety-trends.com" target="_blank" rel="noopener">Visit Safety-Trends →</a>
     </header>
 
-    <section class="hero">
-      <div class="pill">IT</div>
-      <h1>Turning public data into actionable insights.</h1>
-      <p>Innovation-Trends creates lightweight, privacy-respecting software that helps people make safer, smarter decisions. Our current focus is <b>Safety-Trends</b> — a city safety timeline powered by open data.</p>
-    </section>
+    <div class="surface">
+      <section class="hero">
+        <div class="pill">IT</div>
+        <h1>Turning public data into actionable insights.</h1>
+        <p>Innovation-Trends creates lightweight, privacy-respecting software that helps people make safer, smarter decisions. Our current focus is <b>Safety-Trends</b> — a city safety timeline powered by open data.</p>
+      </section>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Safety-Trends</h3>
-        <p>Real-time incidents, maps, and alerts for your city. Built on open, verifiable sources.</p>
-        <a href="https://safety-trends.com" target="_blank">Visit Safety-Trends →</a>
+      <div class="cards">
+        <div class="card">
+          <h3>Safety-Trends</h3>
+          <p>Real-time incidents, maps, and alerts for your city. Built on open, verifiable sources.</p>
+          <a href="https://safety-trends.com" target="_blank">Visit Safety-Trends →</a>
+        </div>
+        <div class="card">
+          <h3>Our Approach</h3>
+          <p>Small, focused products. Clear value. Transparent sources. Ship fast, iterate with real feedback.</p>
+        </div>
+        <div class="card">
+          <h3>What’s Next</h3>
+          <p>Selective partnerships and city rollouts. Press & updates will be posted here as they happen.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Our Approach</h3>
-        <p>Small, focused products. Clear value. Transparent sources. Ship fast, iterate with real feedback.</p>
-      </div>
-      <div class="card">
-        <h3>What’s Next</h3>
-        <p>Selective partnerships and city rollouts. Press & updates will be posted here as they happen.</p>
-      </div>
+
+      <section class="split" id="about">
+        <div class="card">
+          <h3>About</h3>
+          <p class="muted">Innovation-Trends LLC (Washington, USA) develops practical, privacy-aware apps that make public data useful. We favor straightforward UX, lean infrastructure, and measurable impact.</p>
+        </div>
+
+        <div class="card" id="contact">
+          <h3>Contact</h3>
+          <ul class="list">
+            <li>Email: <a href="mailto:info@innovation-trends.com">info@innovation-trends.com</a></li>
+            <li>Project: <a href="https://safety-trends.com" target="_blank" rel="noopener">Safety-Trends</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="year"></span> Innovation-Trends LLC — Registered in Washington State
+      </footer>
     </div>
-
-    <section class="split" id="about">
-      <div class="card">
-        <h3>About</h3>
-        <p class="muted">Innovation-Trends LLC (Washington, USA) develops practical, privacy-aware apps that make public data useful. We favor straightforward UX, lean infrastructure, and measurable impact.</p>
-      </div>
-
-      <div class="card" id="contact">
-        <h3>Contact</h3>
-        <ul class="list">
-          <li>Email: <a href="mailto:info@innovation-trends.com">info@innovation-trends.com</a></li>
-          <li>Project: <a href="https://safety-trends.com" target="_blank" rel="noopener">Safety-Trends</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <footer>
-      © <span id="year"></span> Innovation-Trends LLC — Registered in Washington State
-    </footer>
   </div>
 
   <script>

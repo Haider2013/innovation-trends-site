@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Innovation-Trends</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <style>
@@ -25,14 +25,8 @@
       background: var(--bg);
     }
 
-    a {
-      color: var(--brand);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
     .container {
       max-width: 960px;
@@ -48,18 +42,9 @@
     }
 
     .logo-title {
-      display: flex;
-      align-items: center;
       font-weight: 700;
-      letter-spacing: 0.4px;
       font-size: 18px;
       color: var(--text);
-    }
-
-    .logo-title img {
-      height: 40px;
-      margin-right: 10px;
-      vertical-align: middle;
     }
 
     .cta {
@@ -101,8 +86,8 @@
     }
 
     .card {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-      border: 1px solid rgba(148, 163, 184, 0.15);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border: 1px solid rgba(148,163,184,0.15);
       border-radius: 16px;
       padding: 18px;
     }
@@ -126,26 +111,26 @@
       padding-left: 18px;
     }
 
-    .muted {
-      color: var(--muted);
-    }
+    .muted { color: var(--muted); }
   </style>
 </head>
 
 <body>
   <div class="container">
     <header>
-      <div class="logo-title">
-        <img src="assets/logo.svg" alt="Innovation Trends logo">
-        Innovation-Trends
-      </div>
-      <a class="cta" href="https://safety-trends.com" target="_blank" rel="noopener">Visit Safety-Trends →</a>
+      <div class="logo-title">Innovation-Trends</div>
+      <a class="cta" href="https://safety-trends.com" target="_blank" rel="noopener">
+        Visit Safety-Trends →
+      </a>
     </header>
 
     <section class="hero">
       <div class="pill">IT</div>
       <h1>Turning public data into actionable insights.</h1>
-      <p>Innovation-Trends creates lightweight, privacy-respecting software that helps people make safer, smarter decisions. Our current focus is <b>Safety-Trends</b> — a city safety timeline powered by open data.</p>
+      <p>
+        Innovation-Trends creates lightweight, privacy-respecting software that helps people make safer,
+        smarter decisions. Our current focus is <strong>Safety-Trends</strong> — a city safety timeline powered by open data.
+      </p>
     </section>
 
     <div class="cards">
@@ -154,10 +139,12 @@
         <p>Real-time incidents, maps, and alerts for your city. Built on open, verifiable sources.</p>
         <a href="https://safety-trends.com" target="_blank">Visit Safety-Trends →</a>
       </div>
+
       <div class="card">
         <h3>Our Approach</h3>
         <p>Small, focused products. Clear value. Transparent sources. Ship fast, iterate with real feedback.</p>
       </div>
+
       <div class="card">
         <h3>What’s Next</h3>
         <p>Selective partnerships and city rollouts. Press & updates will be posted here as they happen.</p>
@@ -167,14 +154,17 @@
     <section class="split" id="about">
       <div class="card">
         <h3>About</h3>
-        <p class="muted">Innovation-Trends LLC (Washington, USA) develops practical, privacy-aware apps that make public data useful. We favor straightforward UX, lean infrastructure, and measurable impact.</p>
+        <p class="muted">
+          Innovation-Trends LLC (Washington, USA) develops practical, privacy-aware apps that make public data useful.
+          We favor straightforward UX, lean infrastructure, and measurable impact.
+        </p>
       </div>
 
       <div class="card" id="contact">
         <h3>Contact</h3>
         <ul class="list">
           <li>Email: <a href="mailto:info@innovation-trends.com">info@innovation-trends.com</a></li>
-          <li>Project: <a href="https://safety-trends.com" target="_blank" rel="noopener">Safety-Trends</a></li>
+          <li>Project: <a href="https://safety-trends.com" target="_blank">Safety-Trends</a></li>
         </ul>
       </div>
     </section>
@@ -185,7 +175,7 @@
   </div>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>

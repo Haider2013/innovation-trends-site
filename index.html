@@ -8,10 +8,10 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <style>
     :root {
-      --bg: #111a2e;
-      --card: #11192a;
-      --muted: #a8b3cf;
-      --text: #e8eefc;
+      --bg: #cfd8e8;          /* Light blue background */
+      --card: #ffffff;
+      --muted: #333f55;
+      --text: #1b2436;        /* Dark navy text */
       --brand: #4f7cff;
       --brand-2: #7cc5ff;
     }
@@ -87,6 +87,7 @@
       font-size: clamp(28px, 5vw, 46px);
       line-height: 1.1;
       margin: 0;
+      color: var(--text);
     }
 
     .hero p {
@@ -103,19 +104,21 @@
     }
 
     .card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border: 1px solid rgba(148,163,184,0.25);
+      background: #f7f9fc;
+      border: 1px solid rgba(0,0,0,0.1);
       border-radius: 16px;
       padding: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
     .card h3 {
       margin: 0 0 8px;
+      color: var(--text);
     }
 
     footer {
       margin: 48px 0 16px;
-      color: #9aa3b2;
+      color: #4a5060;
       font-size: 14px;
       text-align: center;
     }

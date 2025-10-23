@@ -4,87 +4,177 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Innovation-Trends</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <style>
-    :root{
-      --bg:#0b1220; --card:#11192a; --muted:#a8b3cf; --text:#e8eefc;
-      --brand:#4f7cff; --brand-2:#7cc5ff;
+    :root {
+      --bg: #111a2e;
+      --card: #11192a;
+      --muted: #a8b3cf;
+      --text: #e8eefc;
+      --brand: #4f7cff;
+      --brand-2: #7cc5ff;
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;color:var(--text);background:var(--bg)}
-    a{color:var(--brand);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:960px;margin:0 auto;padding:40px 20px}
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
-    .logo-title{font-weight:700;letter-spacing:.4px}
-    .cta{
-      display:inline-flex;align-items:center;gap:10px;padding:10px 14px;
-      background:linear-gradient(135deg,var(--brand),var(--brand-2));
-      color:white;border:none;border-radius:12px;font-weight:600
+
+    * {
+      box-sizing: border-box;
     }
-    .cta:focus{outline:none;box-shadow:0 0 0 3px rgba(79,124,255,.35)}
-    .hero{display:grid;gap:16px;padding:40px 0}
-    .hero h1{font-size:clamp(28px,5vw,46px);line-height:1.1;margin:0}
-    .hero p{color:var(--muted);max-width:70ch;margin:0}
-    .cards{
-      display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:16px;margin-top:24px
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
     }
-    .card{
-      background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));
-      border:1px solid rgba(148,163,184,.15);border-radius:16px;padding:18px
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
     }
-    .card h3{margin:0 0 8px}
-    .pill{display:inline-block;border:1px solid rgba(148,163,184,.25);color:var(--muted);
-      border-radius:999px;padding:4px 10px;font-size:12px}
-    .split{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;margin-top:12px}
-    @media (max-width:840px){.split{grid-template-columns:1fr}}
-    footer{margin:48px 0 16px;color:#9aa3b2;font-size:14px}
-    .list{display:grid;gap:8px;margin:0;padding-left:18px}
-    .muted{color:var(--muted)}
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 28px;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      font-size: 18px;
+      color: var(--text);
+    }
+
+    .logo-title img {
+      height: 40px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+
+    .hero {
+      display: grid;
+      gap: 16px;
+      padding: 40px 0;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 46px);
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 70ch;
+      margin: 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border: 1px solid rgba(148,163,184,0.25);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+    }
+
+    footer {
+      margin: 48px 0 16px;
+      color: #9aa3b2;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .list {
+      display: grid;
+      gap: 8px;
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
     <header>
-      <div class="logo-title">Innovation-Trends</div>
+      <div class="logo-title">
+        <img src="assets/logo.svg" alt="Innovation Trends logo">
+        Innovation-Trends
+      </div>
       <a class="cta" href="https://safety-trends.com" target="_blank" rel="noopener">Visit Safety-Trends →</a>
     </header>
 
     <section class="hero">
-      <span class="pill">IT</span>
+      <div class="pill">IT</div>
       <h1>Turning public data into actionable insights.</h1>
-      <p>Innovation-Trends creates lightweight, privacy-respecting software that helps people make safer, smarter decisions.
-         Our current focus is <strong>Safety-Trends</strong> — a city safety timeline powered by open data.</p>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Safety-Trends</h3>
-          <p class="muted">Real-time incidents, maps, and alerts for your city. Built on open, verifiable sources.</p>
-          <p><a href="https://safety-trends.com" target="_blank" rel="noopener">Visit Safety-Trends →</a></p>
-        </div>
-        <div class="card">
-          <h3>Our Approach</h3>
-          <p class="muted">Small, focused products. Clear value. Transparent sources. Ship fast, iterate with real feedback.</p>
-        </div>
-        <div class="card">
-          <h3>What’s Next</h3>
-          <p class="muted">Selective partnerships and city rollouts. Press & updates will be posted here as they happen.</p>
-        </div>
-      </div>
+      <p>Innovation-Trends creates lightweight, privacy-respecting software that helps people make safer, smarter decisions. Our current focus is <b>Safety-Trends</b> — a city safety timeline powered by open data.</p>
     </section>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Safety-Trends</h3>
+        <p>Real-time incidents, maps, and alerts for your city. Built on open, verifiable sources.</p>
+        <a href="https://safety-trends.com" target="_blank">Visit Safety-Trends →</a>
+      </div>
+      <div class="card">
+        <h3>Our Approach</h3>
+        <p>Small, focused products. Clear value. Transparent sources. Ship fast, iterate with real feedback.</p>
+      </div>
+      <div class="card">
+        <h3>What’s Next</h3>
+        <p>Selective partnerships and city rollouts. Press & updates will be posted here as they happen.</p>
+      </div>
+    </div>
 
     <section class="split" id="about">
       <div class="card">
         <h3>About</h3>
-        <p class="muted">Innovation-Trends LLC (Washington, USA) develops practical, privacy-aware apps that make public data useful.
-           We favor straightforward UX, lean infrastructure, and measurable impact.</p>
+        <p class="muted">Innovation-Trends LLC (Washington, USA) develops practical, privacy-aware apps that make public data useful. We favor straightforward UX, lean infrastructure, and measurable impact.</p>
       </div>
 
       <div class="card" id="contact">
         <h3>Contact</h3>
         <ul class="list">
           <li>Email: <a href="mailto:info@innovation-trends.com">info@innovation-trends.com</a></li>
-          <li>Media/press: <a href="mailto:press@innovation-trends.com">press@innovation-trends.com</a></li>
           <li>Project: <a href="https://safety-trends.com" target="_blank" rel="noopener">Safety-Trends</a></li>
         </ul>
       </div>
@@ -95,6 +185,8 @@
     </footer>
   </div>
 
-  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
